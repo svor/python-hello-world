@@ -4,7 +4,7 @@ metadata:
 components:
   - name: python
     container:
-      image: https://quay.io/redhat-user-workloads/devspaces-tenant/devspaces/udi-base-rhel9@sha256:563bd84b738f65ac08c6f0a5184be8f35a52f44b9402a236f51954f95d0764d6
+      image: quay.io/redhat-user-workloads/devspaces-tenant/devspaces/udi-base-rhel9@sha256:563bd84b738f65ac08c6f0a5184be8f35a52f44b9402a236f51954f95d0764d6
       volumeMounts:
         - name: venv
           path: /home/user/.venv
