@@ -4,7 +4,7 @@ metadata:
 components:
   - name: python
     container:
-      image: quay.io/vsvydenk/base-developer-image:case5
+      image: quay.io/devfile/universal-developer-image:latest
       volumeMounts:
         - name: venv
           path: /home/user/.venv
