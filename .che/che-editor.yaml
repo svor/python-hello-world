@@ -1,4 +1,4 @@
-id: che-incubator/che-code/insider
+id: che-incubator/che-code/insiders
 override:
   containers:
     - name: che-code-injector
