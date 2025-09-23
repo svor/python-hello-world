@@ -2,4 +2,4 @@ reference: https://eclipse-che.github.io/che-plugin-registry/main/v3/plugins/che
 override:
   containers:
     - name: che-code-injector
-      memoryLimit: 2048Mi
+      memoryLimit: 4096Mi
