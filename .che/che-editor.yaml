@@ -1,5 +1,1 @@
-id: che-incubator/che-code/insiders
-override:
-  containers:
-    - name: che-code-injector
-      memoryLimit: 2048Mi
+id: che-incubator/che-idea/latest
