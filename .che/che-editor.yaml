@@ -1,5 +1,1 @@
-reference: https://eclipse-che.github.io/che-plugin-registry/main/v3/plugins/che-incubator/che-code/insiders/devfile.yaml
-override:
-  containers:
-    - name: che-code-injector
-      memoryLimit: 4096Mi
+id: che-incubator/che-idea/latest
