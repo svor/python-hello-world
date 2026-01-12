@@ -4,7 +4,7 @@ metadata:
 components:
   - name: python
     container:
-      image: quay.io/vsvydenk/base-developer-image:v
+      image: quay.io/devfile/universal-developer-image:ubi10-latest
       volumeMounts:
         - name: venv
           path: /home/user/.venv
@@ -23,5 +23,16 @@ commands:
       component: python
       workingDir: ${PROJECTS_ROOT}/python-hello-world
       commandLine: python -m venv .venv && . .venv/bin/activate && python hello-world.py
+      group:
+        kind: run
+  - id: test-command
+    exec:
+      label: "Run test command"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/python-hello-world
+      commandLine: |
+          python -m venv .venv &&
+          . .venv/bin/activate &&
+          python hello-world.py
       group:
         kind: run
