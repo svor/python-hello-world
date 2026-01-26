@@ -25,6 +25,16 @@ commands:
       commandLine: python -m venv .venv && . .venv/bin/activate && python hello-world.py
       group:
         kind: run
+  - id: test-command-2
+    exec:
+      label: "Run loop"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/python-hello-world
+      commandLine: |
+        export PUBLISHERS="DotJoshJohnson eamodio felixfbecker formulahendry HookyQR ms-azuretools ms-mssql ms-python ms-vscode octref redhat ritwickdey sburg vscode vscodevim Wscats"
+        for pub in $PUBLISHERS; do echo $pub; done
+      group:
+        kind: run
   - id: test-command
     exec:
       label: "Run test command"
